@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="pysunday文档">
+        <meta name="author" content="Rnet Ao">
+        <link rel="canonical" href="https://pysunday.howduudu.tech/">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>PySunday</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="css/extra.css" rel="stylesheet">
+        <link href="css/autodoc.css" rel="stylesheet">
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href=".">PySunday</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem active">
+                                <a href="." class="nav-link">首页</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="getting-started/" class="nav-link">开始使用</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">教程 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="guide/" class="dropdown-item">教程</a>
+</li>
+                                    
+<li>
+    <a href="guide/install/" class="dropdown-item">安装</a>
+</li>
+                                    
+<li>
+    <a href="guide/setting/" class="dropdown-item">配置</a>
+</li>
+                                    
+<li>
+    <a href="guide/const-path/" class="dropdown-item">常量与路径</a>
+</li>
+                                    
+<li>
+    <a href="guide/api-fetch/" class="dropdown-item">API-接口请求</a>
+</li>
+                                    
+<li>
+    <a href="guide/api-cmdparams/" class="dropdown-item">API-命令入参(待补充)</a>
+</li>
+                                    
+<li>
+    <a href="guide/api-multi-thread/" class="dropdown-item">API-多线程</a>
+</li>
+                                    
+<li>
+    <a href="guide/api-exception/" class="dropdown-item">API-报错捕获</a>
+</li>
+                                    
+<li>
+    <a href="guide/api-logging/" class="dropdown-item">API-日志记录</a>
+</li>
+                                    
+<li>
+    <a href="guide/api-login/" class="dropdown-item">API-登录管理</a>
+</li>
+                                    
+<li>
+    <a href="guide/api-mail/" class="dropdown-item">API-邮件通知</a>
+</li>
+                                    
+<li>
+    <a href="guide/api-encrypt/" class="dropdown-item">API-加密解密</a>
+</li>
+                                    
+<li>
+    <a href="guide/api-tableprint/" class="dropdown-item">API-列表打印</a>
+</li>
+                                    
+<li>
+    <a href="guide/api-list/" class="dropdown-item">API-其它</a>
+</li>
+                                    
+<li>
+    <a href="guide/tools-plugin-example/" class="dropdown-item">工具插件开发(待补充)</a>
+</li>
+                                    
+<li>
+    <a href="guide/login-plugin-example/" class="dropdown-item">登录插件开发(待补充)</a>
+</li>
+                                    
+<li>
+    <a href="guide/plugin-proxy/" class="dropdown-item">插件-代理插件讲解(待补充)</a>
+</li>
+                                    
+<li>
+    <a href="guide/plugin-zhipin/" class="dropdown-item">插件-直聘插件讲解(待补充)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="plugins/" class="nav-link">插件</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="getting-started/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/pysunday/pysunday/blob/master/docs/index.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#pysunday" class="nav-link">PYSunday</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="pysunday">PYSunday<a class="headerlink" href="#pysunday" title="Permanent link"></a></h1>
+<p>快速开发基于python的工具类插件</p>
+<hr />
+<p>PYSunday是一个 <strong>快速的</strong>、<strong>简单的</strong>、<strong>插件化的</strong> 用于快速开发基于python的工具的集成库,
+使用PYSunday您可只关注业务逻辑，不用考虑日志、多线程、代理、命令化的配置，因为PYSunday已经
+全部为您解决了。快速体验点击 <a href="getting-started/">开始使用</a>, 点击 <a href="guide/">教程</a> 查看更多信息。</p>
+<div class="text-center">
+<a href="getting-started/" class="btn btn-primary" role="button">开始使用</a>
+<a href="guide/" class="btn btn-primary" role="button">教程</a>
+</div>
+
+<div class="jumbotron">
+<h2 class="display-4 text-center">特性</h2>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">插件化</h3>
+        <p class="card-text">
+          PYSunday采用插件化方案有效完成功能解耦，已经存在的插件可直接
+          执行插件命令或者调用插件方法。制作插件简单、高效、快捷。
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">开箱即用</h3>
+          对于开发命令工具、爬虫工具，新项目需要集成很多模块，如命令可视化、
+          进度可视化、报错捕获、登录态缓存、日志分级与缓存、表格数据可视化、
+          密文加密解密等。
+        <p class="card-text">
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">工具开发利器</h3>
+        <p class="card-text">
+          简单配置即可完成工具的入参控制，按照模版快速开发可执行、可调用的
+          工具代码，一行代码完成报错捕获、环境变量、日志输出等的配置。
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">爬虫开发利器</h3>
+          整套爬虫工具链，从网站代码本地化到代理劫持分析到登录态持久化PYSunday
+          都已集成，一行代码完成密文加解密，不管是AES、DES还是国标的SM-x。
+        <p class="card-text">
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 <a href="https://github.com/pysunday/pysunday">PYSunday</a>, 负责人 <a href="https://howduudu.tech">Rnet Ao</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.4.2
+Build Date UTC : 2025-04-27 17:44:50.036746+00:00
+-->

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Rnet Ao">
+        <link rel="canonical" href="https://pysunday.howduudu.tech/getting-started/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>开始使用 - PySunday</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../css/extra.css" rel="stylesheet">
+        <link href="../css/autodoc.css" rel="stylesheet">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="..">PySunday</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">首页</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">开始使用</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">教程 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../guide/" class="dropdown-item">教程</a>
+</li>
+                                    
+<li>
+    <a href="../guide/install/" class="dropdown-item">安装</a>
+</li>
+                                    
+<li>
+    <a href="../guide/setting/" class="dropdown-item">配置</a>
+</li>
+                                    
+<li>
+    <a href="../guide/const-path/" class="dropdown-item">常量与路径</a>
+</li>
+                                    
+<li>
+    <a href="../guide/api-fetch/" class="dropdown-item">API-接口请求</a>
+</li>
+                                    
+<li>
+    <a href="../guide/api-cmdparams/" class="dropdown-item">API-命令入参(待补充)</a>
+</li>
+                                    
+<li>
+    <a href="../guide/api-multi-thread/" class="dropdown-item">API-多线程</a>
+</li>
+                                    
+<li>
+    <a href="../guide/api-exception/" class="dropdown-item">API-报错捕获</a>
+</li>
+                                    
+<li>
+    <a href="../guide/api-logging/" class="dropdown-item">API-日志记录</a>
+</li>
+                                    
+<li>
+    <a href="../guide/api-login/" class="dropdown-item">API-登录管理</a>
+</li>
+                                    
+<li>
+    <a href="../guide/api-mail/" class="dropdown-item">API-邮件通知</a>
+</li>
+                                    
+<li>
+    <a href="../guide/api-encrypt/" class="dropdown-item">API-加密解密</a>
+</li>
+                                    
+<li>
+    <a href="../guide/api-tableprint/" class="dropdown-item">API-列表打印</a>
+</li>
+                                    
+<li>
+    <a href="../guide/api-list/" class="dropdown-item">API-其它</a>
+</li>
+                                    
+<li>
+    <a href="../guide/tools-plugin-example/" class="dropdown-item">工具插件开发(待补充)</a>
+</li>
+                                    
+<li>
+    <a href="../guide/login-plugin-example/" class="dropdown-item">登录插件开发(待补充)</a>
+</li>
+                                    
+<li>
+    <a href="../guide/plugin-proxy/" class="dropdown-item">插件-代理插件讲解(待补充)</a>
+</li>
+                                    
+<li>
+    <a href="../guide/plugin-zhipin/" class="dropdown-item">插件-直聘插件讲解(待补充)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../plugins/" class="nav-link">插件</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../guide/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/pysunday/pysunday/blob/master/docs/getting-started.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#pysunday" class="nav-link">开始使用PYSunday</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">安装</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">创建一个插件(待实现)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">安装插件</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sunday_install" class="nav-link">sunday_install</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">更多教程说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="pysunday">开始使用PYSunday<a class="headerlink" href="#pysunday" title="Permanent link"></a></h1>
+<p>这个教程只做简单介绍!</p>
+<hr />
+<h2 id="_1">安装<a class="headerlink" href="#_1" title="Permanent link"></a></h2>
+<p>允许下面命令安装</p>
+<pre class="highlight"><code class="language-bash">python3 -m pip install pysunday
+或
+pip3 install pysunday</code></pre>
+<p>更多请查看 <a href="../guide/install/">安装教程</a>.</p>
+<h2 id="_2">创建一个插件(待实现)<a class="headerlink" href="#_2" title="Permanent link"></a></h2>
+<p>新建一个插件是非常简单的，允许以下命令创建一个新的插件:</p>
+<pre class="highlight"><code class="language-bash">mkdocs new my-project
+cd my-project</code></pre>
+<p>执行成功后会生成以下文件：</p>
+<pre class="highlight"><code class="language-console">.
+├── README.md
+├── __init__.py
+├── main.py
+├── package.json
+└── params.py</code></pre>
+<p>这里的文件都是必须的，<code>main.py</code>为插件代码文件，<code>package.json</code>记录了文件的关键信息，<code>params.py</code>用于配置插件的命令参数。</p>
+<h2 id="_3">安装插件<a class="headerlink" href="#_3" title="Permanent link"></a></h2>
+<p>现在我们可以安装该插件:</p>
+<pre class="highlight"><code class="language-bash">sunday_install .</code></pre>
+<p>根据<code>package.json</code>文件中的配置，bin放置可执行文件的文件名，type标记是工具类插件还是登录类插件。
+安装完成后，全局命令中会增加一个main命令（在bin字段中配置）。</p>
+<p>执行如下命令查看新安装插件提供的main命令使用方式:</p>
+<pre class="highlight"><code class="language-bash">main -h</code></pre>
+<h2 id="sunday_install">sunday_install<a class="headerlink" href="#sunday_install" title="Permanent link"></a></h2>
+<p>sunday_install命令用于安装sunday插件，可查看该命令使用：</p>
+<pre class="highlight"><code class="language-bash">sunday_install -h</code></pre>
+<h2 id="_4">更多教程说明<a class="headerlink" href="#_4" title="Permanent link"></a></h2>
+<p>点击 <a href="../guide/">教程</a> 查看PYSunday的更多特性。</p>
+<p>想要获取pysunday的更多帮助, 请使用 <a href="https://github.com/pysunday/pysunday/issues">GitHub issues</a> 提问.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 <a href="https://github.com/pysunday/pysunday">PYSunday</a>, 负责人 <a href="https://howduudu.tech">Rnet Ao</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
