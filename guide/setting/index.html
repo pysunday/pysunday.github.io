@@ -480,11 +480,11 @@
         <li class="md-nav__item">
   <a href="#pysundayconfigini" class="md-nav__link">
     <span class="md-ellipsis">
-      PYSunday全局配置文件config.ini
+      PySunday全局配置文件config.ini
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="PYSunday全局配置文件config.ini">
+    <nav class="md-nav" aria-label="PySunday全局配置文件config.ini">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -605,6 +605,75 @@
   
   <span class="md-ellipsis">
     工具插件开发
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sunday_create/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    创建插件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sunday_install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    安装插件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sunday_mkreadme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    自动生成文档
     
   </span>
   
@@ -1290,11 +1359,11 @@
         <li class="md-nav__item">
   <a href="#pysundayconfigini" class="md-nav__link">
     <span class="md-ellipsis">
-      PYSunday全局配置文件config.ini
+      PySunday全局配置文件config.ini
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="PYSunday全局配置文件config.ini">
+    <nav class="md-nav" aria-label="PySunday全局配置文件config.ini">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1366,14 +1435,14 @@
   
 
 
-<h1 id="pysunday">PYSunday 配置<a class="headerlink" href="#pysunday" title="Permanent link"></a></h1>
+<h1 id="pysunday">PySunday 配置<a class="headerlink" href="#pysunday" title="Permanent link"></a></h1>
 <p>全局配置控制插件行为</p>
 <hr />
 <h2 id="_1">运行目录<a class="headerlink" href="#_1" title="Permanent link"></a></h2>
 <p>安装成功后，程序默认会将<code>~/.sunday</code>作为程序运行目录，可以通过运行<code>python3 -c '__import__("sunday.core.init")'</code>自助配置，配置成功后环境变量会新增运行路径键<code>SUNDAY_ROOT</code>，<code>PATH</code>环境变量头部新增目录<code>.sunday/bin</code>，可如下查看程序运行目录：</p>
 <pre class="highlight"><code class="language-bash">$ echo $SUNDAY_ROOT
 /Users/rnet/.sunday</code></pre>
-<p>初始情况下运行目录中只有bin目录，用于存放PYSunday自带的可执行命令</p>
+<p>初始情况下运行目录中只有bin目录，用于存放PySunday自带的可执行命令</p>
 <p>安装插件并执行相关命令后一般会出现如下目录及文件：</p>
 <pre class="highlight"><code class="language-markdown">$ ls $SUNDAY_ROOT
 bin/              config.ini       module-lock.json
@@ -1384,9 +1453,9 @@ cache/            log/             plugins/</code></pre>
 其中config.ini是程序配置文件，并不是程序自动生成的，后面会做说明。</p>
 </div>
 <h3 id="bin">bin目录<a class="headerlink" href="#bin" title="Permanent link"></a></h3>
-<p>bin目录放置的都是基于PYSunday的可执行文件，如自带的<code>sunday_install</code>命令、命令插件<code>package.json</code>中<code>bin</code>字段指定的可执行文件在插件安装成功后也会在这个目录里出现，该目录下的文件都可以在命令行中任何目录下执行.</p>
+<p>bin目录放置的都是基于PySunday的可执行文件，如自带的<code>sunday_install</code>命令、命令插件<code>package.json</code>中<code>bin</code>字段指定的可执行文件在插件安装成功后也会在这个目录里出现，该目录下的文件都可以在命令行中任何目录下执行.</p>
 <h3 id="plugins">plugins目录<a class="headerlink" href="#plugins" title="Permanent link"></a></h3>
-<p>顾名思义，该目录存放安装的pysunday插件，其中<code>branch@user+name</code>为从git仓库拉取的插件，如：</p>
+<p>顾名思义，该目录存放安装的PySunday插件，其中<code>branch@user+name</code>为从git仓库拉取的插件，如：</p>
 <pre class="highlight"><code class="language-markdown">$ ls
 command-common            tools-chanjet             tools-imrebot
 login-avms                tools-chinagkong          tools-ocr
@@ -1402,22 +1471,22 @@ tools-baoshui</code></pre>
 <div class="admonition note">
 <p class="admonition-title">提示</p>
 <p>
-基于PYSunday的插件执行结束后会在尾部打印程序执行时间及日志存储目录，如：<br />
+基于PySunday的插件执行结束后会在尾部打印程序执行时间及日志存储目录，如：<br />
 [11:40:43.86 ] INFO   : <SUNDAY> program execution time 1117810.41 s<br />
 [11:40:43.106] INFO   : <SUNDAY> LOG FILE AT: /Users/rnet/.sunday/log/2023-01-18T13:10:32.646701</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">注意</p>
 <p>
-该目录的文件都是程序执行的日志文件，在程序执行后可用于运行分析，PYSunday不会主动删除日志文件，因此有可能需要使用者手动清理无用日志文件</p>
+该目录的文件都是程序执行的日志文件，在程序执行后可用于运行分析，PySunday不会主动删除日志文件，因此有可能需要使用者手动清理无用日志文件</p>
 </div>
 <h3 id="cache">cache目录<a class="headerlink" href="#cache" title="Permanent link"></a></h3>
 <p>cache目录存放的是程序中需要缓存的文件，如登录插件缓存的用户输入数据及登录态数据</p>
 <h3 id="module-lockjson">module-lock.json文件<a class="headerlink" href="#module-lockjson" title="Permanent link"></a></h3>
-<p>该文件为PYSunday安装插件后自动生成，用于记录插件的关键数据。</p>
-<h2 id="pysundayconfigini">PYSunday全局配置文件config.ini<a class="headerlink" href="#pysundayconfigini" title="Permanent link"></a></h2>
-<p>该文件非必须，用户可以通过该文件个性化配置PYSunday的部分行为。</p>
-<p>PYSunday运行会读取<code>$SUNDAY_ROOT/config.ini</code>文件内的配置项，可以控制日志、登录、加密解密、代理等行为，如作者样例：</p>
+<p>该文件为PySunday安装插件后自动生成，用于记录插件的关键数据。</p>
+<h2 id="pysundayconfigini">PySunday全局配置文件config.ini<a class="headerlink" href="#pysundayconfigini" title="Permanent link"></a></h2>
+<p>该文件非必须，用户可以通过该文件个性化配置PySunday的部分行为。</p>
+<p>PySunday运行会读取<code>$SUNDAY_ROOT/config.ini</code>文件内的配置项，可以控制日志、登录、加密解密、代理等行为，如作者样例：</p>
 <pre class="highlight"><code class="language-text">[LOGGING]
 level  = DEBUG
 format = %%(blue)s[%%(asctime)s.%%(msecs)-3d] %%(log_color)s%%(levelname)-7s: %%(purple)s&lt;%%(name)s&gt; %%(log_color)s%%(message)s
@@ -1487,7 +1556,7 @@ proxy = 127.0.0.1:8888</code></pre>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="February 6, 2023 00:36:10">2023-02-06 00:36:10</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="May 31, 2025 09:15:22">2025-05-31 09:15:22</span>
   </span>
 
     

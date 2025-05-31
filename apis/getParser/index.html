@@ -453,6 +453,75 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/sunday_create/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    创建插件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/sunday_install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    安装插件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/sunday_mkreadme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    自动生成文档
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1165,29 +1234,25 @@ Returns: parser, [subparsersObj]
 Usages:
     CMDINFO = {
         "version": '0.0.1',
-        "description": "根据公司名称搜索",
-        "epilog": "",
+        "description": "命令描述",
+        "epilog": "使用样例：%(prog)s name -m 176<strong>**0163",
         'params': {
             'DEFAULT': [
+                {
+                    'name': 'name',
+                    'help': '不需要-前缀的入参',
+                    'default': './',
+                    'nargs': '?'
+                },
                 {
                     'name': ['-m', '--mobile'],
                     'help': '手机号',
                     'dest': 'mobile',
                 },
-                {
-                    'name': ['-p', '--pass'],
-                    'help': '密码',
-                    'dest': 'password',
-                },
-                {
-                    'name': ['-t', '--text'],
-                    'help': '搜索文本',
-                    'dest': 'search_text',
-                },
             ],
         }
     }
-    parser = getParser(**CMDINFO)
+    parser = getParser(</strong>CMDINFO)
     handle = parser.parse_args(namespace=MySearch())</p></div>
 </div>
 <div class="autodoc">

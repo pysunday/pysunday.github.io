@@ -2,130 +2,142 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://pysunday.howduudu.tech/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/about/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/getting-started/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/guide/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/plugins/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/apis/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/apis/Auth/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/apis/Email/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/apis/Fetch/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/apis/Logger/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/apis/LoginBase/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/apis/MultiThread/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/apis/cache_name/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/apis/cmdexec/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/apis/common/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/apis/cryptanalyst/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/apis/enver/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/apis/getConfig/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/apis/getException/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/apis/getParser/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/apis/globalvar/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/apis/image/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/apis/printTable/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/guide/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/guide/api-list/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/guide/const-path/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/guide/install/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/guide/login-plugin/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/guide/plugin-proxy/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/guide/plugin-zhipin/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/guide/setting/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
+    </url>
+    <url>
+         <loc>https://pysunday.howduudu.tech/guide/sunday_create/</loc>
+         <lastmod>2025-05-31</lastmod>
+    </url>
+    <url>
+         <loc>https://pysunday.howduudu.tech/guide/sunday_install/</loc>
+         <lastmod>2025-05-31</lastmod>
+    </url>
+    <url>
+         <loc>https://pysunday.howduudu.tech/guide/sunday_mkreadme/</loc>
+         <lastmod>2025-05-31</lastmod>
     </url>
     <url>
          <loc>https://pysunday.howduudu.tech/guide/tools-plugin/</loc>
-         <lastmod>2025-05-28</lastmod>
+         <lastmod>2025-05-31</lastmod>
     </url>
 </urlset>
